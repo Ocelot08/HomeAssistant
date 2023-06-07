@@ -1,4 +1,4 @@
-# This is my repo for Home Assistant Projects, just to share with people who request it.
+This is my repo for Home Assistant Projects, just to share with people who request it.
 
 ## Roku Remote Resources:
 - https://esphome.io/components/matrix_keypad.html
