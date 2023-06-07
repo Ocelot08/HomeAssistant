@@ -1,6 +1,6 @@
 This is my repo for Home Assistant Projects, just to share with people who request it.
 
-## RokuRemote Resources:
+### RokuRemote Resources:
 - [ESPHome Matrix Keypad Doc](https://esphome.io/components/matrix_keypad.html) – The main resource
 - [Medium post about building a Roku remote with an Arduino](https://medium.com/@nchourrout/building-a-better-and-bulkier-roku-remote-fa34bcb185c3) – The original inspiration, but I veered off to go with ESPHome and HA instead of straight up arduino directly to TV
 - [Handwiring a Mechanical Keyboard](https://www.crackedthecode.co/a-complete-guide-to-building-a-hand-wired-keyboard/) – The remote wiring is similar to this except DON'T ADD DIODES, they messed up the signals. Just wire them straight together in columns and rows.
