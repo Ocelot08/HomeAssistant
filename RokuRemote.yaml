@@ -9,6 +9,7 @@ esp8266:
 logger:
 
 # Enable Home Assistant API
+# Encryption key was setup automatically. I believe lines 14 & 15 can be deleted if you don't want it
 api:
   encryption:
     key: "[encription key]"
