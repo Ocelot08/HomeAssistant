@@ -1,0 +1,144 @@
+esphome:
+  name: remote-roku
+  friendly_name: remote-roku
+
+esp8266:
+  board: esp01_1m
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "[encription key]"
+
+ota:
+
+wifi:
+  ssid: [wifi name]
+  password: [wifi password]
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  # This should auto fill on first setup so will be different than below
+  ap:
+    ssid: "remote04-roku"
+    password: "asdfasdfasdf"
+
+captive_portal:
+
+matrix_keypad:
+  id: mykeypad
+  rows:
+    - pin: 5
+    - pin: 4
+    - pin: 0
+    - pin: 2
+  columns:
+    - pin: 3
+    - pin: 14
+    - pin: 12
+    - pin: 13
+  keys: "123A456B789CDEFG"
+  has_diodes: false
+
+binary_sensor:
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key01
+    name: "key01"
+    row: 0
+    col: 0
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key02
+    name: "key02"
+    row: 0
+    col: 1
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key03
+    name: "key03"
+    row: 0
+    col: 2
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key04
+    name: "key04"
+    row: 0
+    col: 3
+  
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key05
+    name: "key05"
+    row: 1
+    col: 0
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key06
+    name: "key06"
+    row: 1
+    col: 1
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key07
+    name: "key07"
+    row: 1
+    col: 2
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key08
+    name: "key08"
+    row: 1
+    col: 3
+  
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key09
+    name: "key09"
+    row: 2
+    col: 0
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key10
+    name: "key10"
+    row: 2
+    col: 1
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key11
+    name: "key11"
+    row: 2
+    col: 2
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key12
+    name: "key12"
+    row: 2
+    col: 3
+  
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key13
+    name: "key13"
+    row: 3
+    col: 0
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key14
+    name: "key14"
+    row: 3
+    col: 1
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key15
+    name: "key15"
+    row: 3
+    col: 2
+  - platform: matrix_keypad
+    keypad_id: mykeypad
+    id: key16
+    name: "key16"
+    row: 3
+    col: 3
